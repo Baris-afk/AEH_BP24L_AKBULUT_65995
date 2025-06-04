@@ -52,11 +52,11 @@ public class myEleventhApp {
                 new Student("09876", "Katarzyna", "Kowalczyk", Arrays.asList(5, 4, 4, 5))
         );
 
-        // En yüksek ortalamaya sahip öğrenciyi bul
+
         Student topStudent = Collections.max(students, Comparator.comparingDouble(Student::getAverageGrade));
         System.out.println("Student with the highest average: " + topStudent);
 
-        // Soyadlara göre sırala
+
         students.sort(Comparator.comparing(Student::getLastName));
 
         System.out.println("\nStudents sorted by last names:");
